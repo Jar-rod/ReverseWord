@@ -23,10 +23,9 @@
         System.Console.Write($"{i+1}) ");
         sentences[i] = System.Console.ReadLine();
 
-        //1 < letters < 25
         while (!ValidateLetterLength(sentences[i]))
         {
-          System.Console.WriteLine($"Sentence must be greater than {Letters.min} or less than {Letters.max} letters!");
+          System.Console.WriteLine($"Sentence must be >= {(int)Letters.min} or <= {(int)Letters.max} letters!");
           System.Console.Write($"{i+1}) ");
           sentences[i] = System.Console.ReadLine();
         }
@@ -34,37 +33,43 @@
 
       for (int i = 0; i < numberOfCases; i++)
       {
-        System.Console.WriteLine($"Case {i + 1}: {ReverseWords(sentences[i])}");
+        System.Console.WriteLine($"Case {i + 1}: {ReverseWords(sentences[i].Trim())}");
       }
     }
 
     public static string ReverseWords(string sentence)
     {
       string[] words = sentence.Split(" ");
-      string[] reversedSentence = new string[words.Length];
+      string[] reversedSentenceArray = new string[words.Length];
+      string reversedSentence = "";
 
       for (int i = 0; i < words.Length; i++)
       {
         int index = words.Length - (i + 1);
-        reversedSentence[i] = words[index];
+        reversedSentenceArray[i] = words[index];
       }
 
-      string output = "";
-      foreach (string word in reversedSentence)
+      foreach (string word in reversedSentenceArray)
       {
-        output += $" {word}";
+        reversedSentence += $" {word}";
       }
 
-      return output;
+      return reversedSentence;
     }
 
+    /// <summary>
+    /// Validates if the total number of letters within a sentence is 1 <= x <= 25.
+    /// Space characters are to be removed first
+    /// </summary>
+    /// <param name="sentence"></param>
+    /// <returns></returns>
     public static bool ValidateLetterLength(string sentence)
     {
-      if (sentence.Replace(" ", "").Length >= (int)Letters.max || sentence.Replace(" ", "").Length <= (int)Letters.min)
+      if (sentence.Replace(" ", "").Length <= (int)Letters.max && sentence.Replace(" ", "").Length >= (int)Letters.min)
       {
-        return false;
+        return true;
       }
-      return true;
+      return false;
     }
 
     private enum Letters

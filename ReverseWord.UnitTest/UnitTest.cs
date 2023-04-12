@@ -23,7 +23,8 @@ namespace ReverseWord.UnitTest
     [Theory]
     [InlineData("this is a test that should failed but we'll try our best to can it right", true)]
     [InlineData("this should be validated", false)]
-    //[InlineData("all your base", "base your all")]
+    [InlineData("a", false)] //exactly 1
+    [InlineData("qwertyuiopasdfghjklzxcvbn", false)] //exactly 25
     public void ReverseWord_GivenMoreThanOneWordOf25letter_ThenReturnAnError(string actual, bool expected)
     {
       var actualValue = !ReverseWord.Console.ReverseWord.ValidateLetterLength(actual);
