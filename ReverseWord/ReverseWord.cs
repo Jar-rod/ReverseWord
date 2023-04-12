@@ -54,7 +54,7 @@
         reversedSentence += $" {word}";
       }
 
-      return reversedSentence;
+      return reversedSentence.Trim();
     }
 
     /// <summary>

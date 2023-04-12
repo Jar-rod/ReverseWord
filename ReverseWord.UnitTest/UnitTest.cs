@@ -1,5 +1,4 @@
 using Xunit;
-using ReverseWord.Console;
 
 namespace ReverseWord.UnitTest
 {
@@ -12,7 +11,7 @@ namespace ReverseWord.UnitTest
     [InlineData("all your base", "base your all")]
     public void ReverseWord_GivenMoreThanOneWord_ThenReverseTheSentence(string actual, string expected)
     {
-      var actualValue = ReverseWord.Console.ReverseWord.ReverseWords(actual).Trim();
+      var actualValue = ReverseWord.Console.ReverseWord.ReverseWords(actual.Trim());
       
       Assert.Equal(
           expected,
@@ -27,7 +26,7 @@ namespace ReverseWord.UnitTest
     [InlineData("qwertyuiopasdfghjklzxcvbn", false)] //exactly 25
     public void ReverseWord_GivenMoreThanOneWordOf25letter_ThenReturnAnError(string actual, bool expected)
     {
-      var actualValue = !ReverseWord.Console.ReverseWord.ValidateLetterLength(actual);
+      var actualValue = !ReverseWord.Console.ReverseWord.ValidateLetterLength(actual.Trim());
 
       Assert.Equal(
           expected,
