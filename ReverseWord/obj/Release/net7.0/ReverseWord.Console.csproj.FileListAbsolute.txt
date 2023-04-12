@@ -1,0 +1,15 @@
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\bin\Release\net7.0\ReverseWord.Console.exe
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\bin\Release\net7.0\ReverseWord.Console.deps.json
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\bin\Release\net7.0\ReverseWord.Console.runtimeconfig.json
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\bin\Release\net7.0\ReverseWord.Console.dll
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\bin\Release\net7.0\ReverseWord.Console.pdb
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.csproj.AssemblyReference.cache
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.AssemblyInfoInputs.cache
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.AssemblyInfo.cs
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.csproj.CoreCompileInputs.cache
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.dll
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\refint\ReverseWord.Console.dll
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.pdb
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ReverseWord.Console.genruntimeconfig.cache
+D:\Development\Lightstone\ReverseWord\ReverseWord\ReverseWord\obj\Release\net7.0\ref\ReverseWord.Console.dll
